@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/context/theme-context";
 
 export default function ThemeSwitch() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme() || {};
 
   return (
     <button

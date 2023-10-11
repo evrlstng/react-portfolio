@@ -13,7 +13,7 @@ import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.75);
-  const { theme } = useTheme();
+  const { theme } = useTheme() || {};
 
   return (
     <section ref={ref} id="experience" className="scroll-mt-28">
